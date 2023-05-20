@@ -1,0 +1,33 @@
+body {
+    background-color: black;
+  }
+  
+  .navigation {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 6%;
+  
+    ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+  
+      li {
+        margin-right: 100px;
+  
+        &:last-child {
+          margin-right: 0;
+        }
+  
+        a {
+          text-decoration: none;
+          color: white; // 将字体颜色设置为白色
+  
+          &:hover {
+            color: red;
+          }
+        }
+      }
+    }
+  }
+  

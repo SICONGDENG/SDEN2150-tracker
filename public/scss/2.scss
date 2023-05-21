@@ -1,0 +1,40 @@
+#bg2 {
+    background-image: url('../img/2_background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.topic2 {
+    ul {
+        margin-top: 100px;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+
+        li {
+            margin-right: 20px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            a {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                text-decoration: none;
+
+                img {
+                    width: 300px;
+                }
+
+                span {
+                    margin-top: 10px;
+                    font-size: 25px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

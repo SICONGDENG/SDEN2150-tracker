@@ -64,6 +64,7 @@ body {
 
                     input[type="submit"] {
                         background-color: #ff6347;
+                        text-shadow: none;
                         color: white;
                         border: none;
                         border-radius: 5px;
@@ -99,7 +100,7 @@ body {
 
         #btn {
             margin-left: 70%;
-            background-color: black;
+            background-color: #ff6347;
             color: white;
             border: none;
             padding: 10px 60px;
@@ -110,7 +111,7 @@ body {
 
             &:hover {
                 background-color: white;
-                color: black;
+                color: #ff6347;
             }
         }
     }

@@ -20,7 +20,7 @@ form.addEventListener("submit", function (event) {
 function displayTask(task) {
   let item = document.createElement("li");
   item.setAttribute("data-id", task.id);
-  item.innerHTML = `<p><strong>${task.name}</strong><br>${task.training}<br>${task.weight}KG X ${task.times}<br>${task.date}</p>`;
+  item.innerHTML = `<p><strong>${task.name}</strong><br>${task.training}<br>${task.weight}KG X ${task.times}<br>${task.date} ${currentHourAndMinute}</p>`;
 
   item.style.backgroundColor = "white";
   item.style.width = "30%";
@@ -28,9 +28,10 @@ function displayTask(task) {
   item.style.marginBottom = "10px";
   item.style.borderRadius = "5px";
   item.style.listStyle = "none";
-  // item.style.marginTop = "-10px";
   item.style.marginLeft = "55%";
   item.style.textAlign = "center";
+  item.style.lineHeight = "1.5";
+  item.style.fontSize = "20px"
 
 
 
@@ -41,14 +42,14 @@ function displayTask(task) {
 
   // Setup delete button DOM elements
   let delButton = document.createElement("button");
-  let delButtonText = document.createTextNode("Delete");
+  let delButtonText = document.createTextNode("DELETE");
   delButton.appendChild(delButtonText);
   item.appendChild(delButton); // Adds a delete button to every task
 
   delButton.style.backgroundColor = "#e74c3c";
   delButton.style.color = "white";
   delButton.style.border = "none";
-  delButton.style.padding = "5px 10px";
+  delButton.style.padding = "10px 20px";
   delButton.style.borderRadius = "5px";
   delButton.style.cursor = "pointer";
 
@@ -74,6 +75,9 @@ var taskList = [];
 
 
 function addTask(name, times, weight, training, date) {
+  // Generate a random ID consisting of digits
+  const id = Math.floor(Math.random() * 1000000000);
+
   // Creating the object, directly passing in the input parameters
   let task = {
     name: name,
@@ -81,14 +85,42 @@ function addTask(name, times, weight, training, date) {
     weight: weight,
     training: training,
     date: date,
+    id: id,
   }
 
   taskList.push(task);
   displayTask(task);
 }
 
+function getCurrentHourAndMinute() {
+  const now = new Date();
+
+  const hours = now.getHours();
+  const minutes = now.getMinutes();
+
+  // Format the hour and minute as desired
+  if (hours < 10 && minutes < 10) {
+    var currentHourAndMinute = `0${hours}:0${minutes}`;
+  }
+  else if(hours < 10 && minutes >= 10) {
+    var currentHourAndMinute = `0${hours}:${minutes}`;
+  }
+  else if(hours >= 10 && minutes < 10){
+    var currentHourAndMinute = `${hours}:0${minutes}`;
+  }
+  else{
+    var currentHourAndMinute = `${hours}:${minutes}`;
+  }
+  return currentHourAndMinute;
+}
+
+// Usage example
+const currentHourAndMinute = getCurrentHourAndMinute();
+console.log(currentHourAndMinute);
+
+
 // Call the function with test values for the input paramaters
-addTask("Initial Sketches", 5, 50, "Concept Ideation", "Google");
+addTask("Initial Sketches", 5, 50, "Traning", "2023/05/20", currentHourAndMinute);
 
 // Log the array to the console.
 console.log(taskList);

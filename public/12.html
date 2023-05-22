@@ -32,18 +32,18 @@
     <div id="formbox1">
       <div class="form-row">
         <label for="taskName">Name</label>
-        <input type="text" name="taskName" id="taskName" required="true" />
+        <input type="text" name="taskName" id="taskName" required="true" placeholder="Your name"/>
       </div>
 
       <div class="form-row">
         <label for="taskType">Training</label>
-        <select name="taskTraining" id="taskTraining" required="true">
+        <select name="taskTraining" id="taskTraining" required="true" style="width: 80%;">
           <option value="">Select one</option>
-          <option value="Concept Ideation">Pulldowns</option>
-          <option value="Wireframing">Chin-ups</option>
-          <option value="Application Coding">Dumbbell hard pull</option>
-          <option value="Application Coding">Barbell Rowing</option>
-          <option value="Application Coding">Rope sitting rowing</option>
+          <option value="Pulldowns">Pulldowns</option>
+          <option value="Chin-ups">Chin-ups</option>
+          <option value="Dumbbell hard pull">Dumbbell hard pull</option>
+          <option value="Barbell Rowing">Barbell Rowing</option>
+          <option value="Rope sitting rowing">Rope sitting rowing</option>
         </select>
       </div>
 
@@ -56,12 +56,12 @@
     <div id="formbox2">
       <div class="form-row">
         <label for="taskWeight">Weight</label>
-        <input type="number" name="taskWeight" id="taskWeight" required="true" />
+        <input type="number" name="taskWeight" id="taskWeight" required="true" placeholder="KG"/>
       </div>
 
       <div class="form-row">
         <label for="taskTimes">Times</label>
-        <input type="number" name="taskTimes" id="taskTimes" required="true" />
+        <input type="number" name="taskTimes" id="taskTimes" required="true" placeholder="How many times?"/>
       </div>
 
 
@@ -74,6 +74,8 @@
   <h2 style="color: white; margin-left: 41%; margin-top: 15px;">Tasks</h2>
   <ul id="tasklist">
   </ul>
+
+  <div style="position: absolute; top: 25%; left: 20%;"><iframe width="300" height="533" src="https://www.youtube.com/embed/5rIqP63yWFg" title="RDL Tutorial: 3 Simple Steps" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
 
   <script src="script.js"></script>
 </body>

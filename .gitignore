@@ -102,3 +102,37 @@ dist
 
 # TernJS port file
 .tern-port
+.DS_Store
+package-lock.json
+package.json
+.parcel-cache/3a5ed860f380000b
+.parcel-cache/662835006b76350b
+.parcel-cache/afae3fd37f7c179d
+.parcel-cache/data.mdb
+public/.DS_Store
+package-lock.json
+package.json
+.parcel-cache/data.mdb
+.parcel-cache/4a0d5c05590002d0
+.parcel-cache/4f18855351f1266a
+.parcel-cache/18d0900e457057d1
+.parcel-cache/31b3578dcd591975
+.parcel-cache/75df1a9f313e0594
+.parcel-cache/243c601845babc91
+.parcel-cache/408ce09fae4e91ba.txt
+.parcel-cache/580aea3ee5d656fa
+.parcel-cache/933091e8813e72e6
+.parcel-cache/af03051ca17a31bc
+.parcel-cache/b80c75357d9fb794
+.parcel-cache/b511b551a1185ae0
+.parcel-cache/ba864d086c16481a
+.parcel-cache/bcc312ed82bd36ef
+.parcel-cache/c6680b3a4a472159
+.parcel-cache/cba60fe8fa7aeefc
+.parcel-cache/ccd45c4459daa22f
+.parcel-cache/da5d1adc3ff0ab2a
+.parcel-cache/daf9efd54a7bdcb0
+.parcel-cache/data.mdb
+.parcel-cache/e8fd3dd6291ccf2a
+.parcel-cache/f0844fd5a525a380
+.parcel-cache/lock.mdb

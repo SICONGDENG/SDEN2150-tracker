@@ -21,7 +21,7 @@ function displayTask(task) {
   let item = document.createElement("li");
   item.setAttribute("data-id", task.id);
   item.innerHTML = `<p><strong>${task.name}</strong><br>${task.training}<br>${task.weight}KG X ${task.times}<br>${task.date} ${currentHourAndMinute}</p>`;
-
+// style the output
   item.style.backgroundColor = "white";
   item.style.width = "30%";
   item.style.padding = "10px";
@@ -46,6 +46,7 @@ function displayTask(task) {
   delButton.appendChild(delButtonText);
   item.appendChild(delButton); // Adds a delete button to every task
 
+  // style the delButton 
   delButton.style.backgroundColor = "#e74c3c";
   delButton.style.color = "white";
   delButton.style.border = "none";

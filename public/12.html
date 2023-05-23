@@ -9,9 +9,12 @@
   <link href="scss/main.scss" rel="stylesheet" type="text/css" />
 </head>
 
+<!-- Background -->
+
 <body id="bg4">
   <header>
     <div id="logo"><img src="img/logo.png" alt="logo"></div>
+    <!-- Navigation -->
     <div class="navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -27,14 +30,16 @@
     </div>
   </header>
 
-
+  <!-- Set the form  -->
   <form id="taskform">
+    <!-- set the left formbox  -->
     <div id="formbox1">
+      <!-- sheet1 Name -->
       <div class="form-row">
         <label for="taskName">Name</label>
-        <input type="text" name="taskName" id="taskName" required="true" placeholder="Your name"/>
+        <input type="text" name="taskName" id="taskName" required="true" placeholder="Your name" />
       </div>
-
+      <!-- sheet2 What Training -->
       <div class="form-row">
         <label for="taskType">Training</label>
         <select name="taskTraining" id="taskTraining" required="true" style="width: 80%;">
@@ -46,25 +51,27 @@
           <option value="Rope sitting rowing">Rope sitting rowing</option>
         </select>
       </div>
-
+      <!-- sheet 3 what Date -->
       <div class="form-row">
-        <label for="taskClient">Date</label>
+        <label for="taskDate">Date</label>
         <input type="date" name="taskDate" id="taskDate" required="true" />
       </div>
     </div>
-
+    <!-- set the right formbox  -->
     <div id="formbox2">
+      <!-- sheet 4 Weight that user Training -->
       <div class="form-row">
         <label for="taskWeight">Weight</label>
-        <input type="number" name="taskWeight" id="taskWeight" required="true" placeholder="KG"/>
+        <input type="number" name="taskWeight" id="taskWeight" required="true" placeholder="KG" />
       </div>
 
+      <!-- sheet 5 how many times user Training -->
       <div class="form-row">
         <label for="taskTimes">Times</label>
-        <input type="number" name="taskTimes" id="taskTimes" required="true" placeholder="How many times?"/>
+        <input type="number" name="taskTimes" id="taskTimes" required="true" placeholder="How many times?" />
       </div>
 
-
+      <!-- submit button  -->
       <div class="form-row">
         <input type="submit" id="taskSubmit">
       </div>
@@ -72,10 +79,15 @@
   </form>
 
   <h2 style="color: white; margin-left: 41%; margin-top: 15px;">Tasks</h2>
+  <!-- Output -->
   <ul id="tasklist">
   </ul>
 
-  <div style="position: absolute; top: 25%; left: 20%;"><iframe width="300" height="533" src="https://www.youtube.com/embed/5rIqP63yWFg" title="RDL Tutorial: 3 Simple Steps" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+  <!-- Embed video from youtueb  -->
+  <div style="position: absolute; top: 25%; left: 20%;"><iframe width="300" height="533"
+      src="https://www.youtube.com/embed/5rIqP63yWFg" title="RDL Tutorial: 3 Simple Steps" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe></div>
 
   <script src="script.js"></script>
 </body>

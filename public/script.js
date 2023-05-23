@@ -21,7 +21,7 @@ function displayTask(task) {
   let item = document.createElement("li");
   item.setAttribute("data-id", task.id);
   item.innerHTML = `<p><strong>${task.name}</strong><br>${task.training}<br>${task.weight}KG X ${task.times}<br>${task.date} ${currentHourAndMinute}</p>`;
-// style the output
+  // style the output
   item.style.backgroundColor = "white";
   item.style.width = "30%";
   item.style.padding = "10px";
@@ -79,7 +79,7 @@ function addTask(name, times, weight, training, date) {
   // Generate a random ID consisting of digits
   const id = Math.floor(Math.random() * 1000000000);
 
-  // Creating the object, directly passing in the input parameters
+  // Creating the input parameters
   let task = {
     name: name,
     times: times,
@@ -99,17 +99,17 @@ function getCurrentHourAndMinute() {
   const hours = now.getHours();
   const minutes = now.getMinutes();
 
-  // Format the hour and minute as desired
+  // Set the hour and minute as desired
   if (hours < 10 && minutes < 10) {
     var currentHourAndMinute = `0${hours}:0${minutes}`;
   }
-  else if(hours < 10 && minutes >= 10) {
+  else if (hours < 10 && minutes >= 10) {
     var currentHourAndMinute = `0${hours}:${minutes}`;
   }
-  else if(hours >= 10 && minutes < 10){
+  else if (hours >= 10 && minutes < 10) {
     var currentHourAndMinute = `${hours}:0${minutes}`;
   }
-  else{
+  else {
     var currentHourAndMinute = `${hours}:${minutes}`;
   }
   return currentHourAndMinute;

@@ -1,17 +1,16 @@
 #bg4 {
+    /* Set the background image */
     background-image: url('../img/4_background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-
-
 #taskform {
+    /* Set for the task form */
     width: 600px;
     margin-top: 50px;
     margin-left: 50%;
     padding: 20px;
-    // background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -20,10 +19,12 @@
 }
 
 .form-row {
+    /* Add margin bottom for form rows */
     margin-bottom: 20px;
 }
 
 label {
+    /* Display labels as block elements with bold font weight and margin bottom */
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
@@ -33,6 +34,7 @@ input[type="text"],
 input[type="number"],
 input[type="date"],
 select {
+    /* Set text inputs, number inputs, date inputs, and training */
     width: 70%;
     padding: 10px;
     font-size: 16px;
@@ -41,6 +43,7 @@ select {
 }
 
 #taskSubmit {
+    /* Style the task submit button */
     background-color: #ff6347;
     color: white;
     border: none;

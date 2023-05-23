@@ -1,61 +1,72 @@
 body {
+    /* Set the background image */
     background-image: url('../img/background.jpg');
+    /* Set the font family to 'Futura' */
     font-family: 'Futura';
 
     #logo {
+        /* Position the logo at the top left with some margin */
         position: absolute;
         top: 5%;
         margin-left: 5%;
 
         img {
+            /* Set the width of the logo image */
             width: 200px;
         }
     }
 
     a {
+        /* Remove underline and set the color and text shadow for links */
         text-decoration: none;
         color: white;
         text-shadow: 0 0 2px black;
 
         &:hover {
+            /* Change link color and text shadow on hover */
             color: black;
             text-shadow: 0 0 2px white;
         }
     }
 
     .navigation {
+        /* Create a navigation bar at the top right */
         display: flex;
         justify-content: flex-end;
         padding-right: 6%;
         margin-top: 5%;
 
         ul {
+            /* Remove default list styling and create a horizontal menu */
             list-style: none;
             display: flex;
             align-items: center;
 
             li {
+                /* Add margin between menu items and set font size and weight */
                 margin-right: 100px;
                 font-size: 30px;
                 font-weight: 600;
 
                 &:last-child {
+                    /* Remove margin for the last menu item */
                     margin-right: 0;
                 }
 
-                
-
                 form {
+                    /* Align form elements horizontally */
                     display: flex;
                     align-items: center;
 
                     input[type="text"],
                     input[type="submit"] {
+                        /* Set padding and font size for form inputs */
                         padding: 10px;
                         font-size: 16px;
                     }
 
                     input[type="text"] {
+                        /* Remove border */
                         border: none;
                         border-radius: 5px;
                         margin-right: 10px;
@@ -63,6 +74,7 @@ body {
                     }
 
                     input[type="submit"] {
+                        /* Style the submit button */
                         background-color: #ff6347;
                         text-shadow: none;
                         color: white;
@@ -76,19 +88,22 @@ body {
     }
 
     .topic {
+        /* Add margin and set text color */
         margin-left: 10%;
         color: white;
         margin-top: -2%;
 
         #title {
+            /* Style the title */
             font-size: 120px;
-            // font-weight: bolder;
+            /* font-weight: bolder; */
             width: 800px;
             text-align: center;
             letter-spacing: 10px;
         }
 
         #intro {
+            /* Style the introduction text */
             font-size: 20px;
             font-weight: bold;
             width: 700px;
@@ -99,6 +114,7 @@ body {
         }
 
         #btn {
+            /* Style the button */
             margin-left: 70%;
             background-color: #ff6347;
             color: white;
@@ -110,6 +126,7 @@ body {
             cursor: pointer;
 
             &:hover {
+                /* Change button background color and color on hover */
                 background-color: white;
                 color: #ff6347;
             }
@@ -117,10 +134,10 @@ body {
     }
 
     #line {
+        /* set the line with width, height, background color, and margin */
         width: 95%;
         height: 5px;
         background-color: white;
-        margin: 90px auto; // 使用 auto 将左右边距设置为自动，实现水平居中
+        margin: 90px auto; /* Use 'auto' to center horizontally */
     }
-    
 }

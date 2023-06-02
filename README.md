@@ -13,33 +13,33 @@ The web prototype is suitable for laptop(1400 x 800).
 
 # User Feedback - Mockup - Itration
 ### Task List
-![mockup Task List](img_readme/Second itration 4.jpg)
+![mockup Task List](img_readme/Second_itration_4.jpg)
 * Change the background
 * Delete "Sign in".
 
 ### Home page
-![mockup Home Page](img_readme/Second itration 1.jpg)
+![mockup Home Page](img_readme/Second_itration_1.jpg)
 * Delete avatar
 * Change the color of the button
 
 ### Category
-![mockup Training page](img_readme/Second itration 2.jpg)
+![mockup Training page](img_readme/Second_itration_2.jpg)
 * Change the background
 * Change the photography
 
 
 # Final Web Application
 ### Home Page
-![home page](img_readme/Home page.png)
+![home page](img_readme/Home_page.png)
 * Change the color of the button
 * Search bar changed to rectangle
 
 ### Training page
-![training page](img_readme/Training page.png)
+![training page](img_readme/Training_page.png)
 * Removed text box
 
 ### Task List
-![task list](img_readme/Task List.png)
+![task list](img_readme/Task_List.png)
 * Change the vedio
 * Delete the music player
 * The language mode will follow the open system language
@@ -53,4 +53,4 @@ The web prototype is suitable for laptop(1400 x 800).
 
  Code of Tasklist are learn from tutorial;
 
-.....
+

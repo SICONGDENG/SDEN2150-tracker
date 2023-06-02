@@ -136,3 +136,5 @@ package.json
 .parcel-cache/e8fd3dd6291ccf2a
 .parcel-cache/f0844fd5a525a380
 .parcel-cache/lock.mdb
+.node_modules
+.parcel-cache
